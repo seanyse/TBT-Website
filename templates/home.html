@@ -12,6 +12,7 @@
     
 </head>
 <body>
+     
 
     <div class="topnav" id="myTopnav">
         <a href="/"><h1>Home</h1></a>
@@ -41,14 +42,11 @@
                 <h3>Availble through in person or online tutoring</h3>
                 <h3 style="margin-bottom: 7%;">Hand-Picked Tutors with a 3.9 GPA requirement</h3>
 
+                <a href="/book/" class="book">Book A Session → </a>
+
             </div>
            
-
-            <a href="/book/" class="book">Book A Session → </a>
-
             <!-- <i class="fa-solid fa-brain fa-5x"></i> -->
-
-            
         </div>
 
         <div class= "right">
@@ -56,18 +54,18 @@
 
             <div class="mySlides fade">
                 
-                <img src="{{ url_for('static', filename='src/tbt.jpg') }}" style="width: 100%; height: 100%;">
+                <img src="{{ url_for('static', filename='src/tbt.jpg') }}" style="width: 100%; min-width: 440px">
               </div>
             
-              <div class="mySlides fade">
+              <!-- <div class="mySlides fade">
                 
-                <img src="{{ url_for('static', filename='src/tutorimg.jpg') }}" style="width: 100%; height: 100%;">
+                <img src="{{ url_for('static', filename='src/tutorimg.jpg') }}" style="width: 100%; max-height: 90%;">
                 
                 
-              </div>
+              </div> -->
 
                 <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-                <a class="next" onclick="plusSlides(1)">Next &#10095;</a>
+                <!-- <a class="next" onclick="plusSlides(1)">Next &#10095;</a> -->
 
 
 
