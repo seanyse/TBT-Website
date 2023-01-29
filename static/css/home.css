@@ -38,7 +38,7 @@ margin: 2%;
 
 .left {
 float: left;
-margin-bottom: 8%;
+margin-bottom: 10%;
 }
 
 .right {
@@ -236,6 +236,7 @@ animation-duration: 2s;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: x-large;
+  font-size: xx-large;
+  
 
 }
