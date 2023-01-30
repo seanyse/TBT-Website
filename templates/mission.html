@@ -8,13 +8,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
+    <link rel="icon" href="{{ url_for('static', filename='src/tbt_logo.jpg') }}" type="image/icon type">
+    
     
 </head>
 <body>
+    <title>Tutors Beat Tumors</title>
 
     <div class="topnav" id="myTopnav">
-        <a href="/"><h1>Home</h1></a>
+        <!-- <a href="/" style="display: inline-block"><img src="{{ url_for('static', filename='src/tbt_logo.jpg') }}" style=" float: left; width: 5%; display: block;"></a> -->
+        <img src="{{ url_for('static', filename='src/tbt_logo.jpg') }}" style=" float: left; width: 4vw; min-width: 50px; display: block;">
+  
+                  
+          <a href="/"><h1>Tutors Beat Tumors</h1></a>
         <a href="/mission/"><h1>Mission</h1></a>
         <a href="/whyus/"><h1>Why Us?</h1></a>
         <a href="/contact/"><h1>Contact</h1></a>
@@ -48,7 +54,7 @@
 
         <div class="footer">
 
-            <h1 style="float: left; margin: .5%;"></h1>
+            <h1 style="float: left; margin: .5%;">Tutors Beat Tumors</h1>
             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-instagram fa-2x"></i></a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-facebook fa-2x"></i></a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-twitter fa-2x"></i></a>

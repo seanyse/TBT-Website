@@ -91,7 +91,7 @@ overflow: hidden;
 background-color: rgba(255, 255, 255, 0.372);
 margin: auto;
 width: 98%;
-padding: 8px;
+padding: 7px;
 
 }
 
@@ -101,14 +101,10 @@ float: left;
 display: block;
 color: #000000;
 text-align: center;
-padding: 12px 40px;
+padding: 10px 30px;
 text-decoration: none;
 
-
-
-
 }
-
 
 .topnav a:hover {
 

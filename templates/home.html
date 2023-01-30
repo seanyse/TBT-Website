@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="{{ url_for('static', filename='src/tbt_logo.jpg') }}" type="image/icon type">
 
     
 </head>
 <body>
+  <title>Tutors Beat Tumors</title>
      
 
     <div class="topnav" id="myTopnav">
-        <a href="/"><h1>Home</h1></a>
+      <!-- <a href="/" style="display: inline-block"><img src="{{ url_for('static', filename='src/tbt_logo.jpg') }}" style=" float: left; width: 5%; display: block;"></a> -->
+      <img src="{{ url_for('static', filename='src/tbt_logo.jpg') }}" style=" float: left; width: 4vw; min-width: 50px; display: block;">
+
+                
+        <a href="/"><h1>Tutors Beat Tumors</h1></a>
         <a href="/mission/"><h1>Mission</h1></a>
         <a href="/whyus/"><h1>Why Us?</h1></a>
         <a href="/contact/"><h1>Contact</h1></a>
         <a href="/faq/"><h1>FAQ</h1></a>
         <a href="/about/"><h1>About</h1></a>
-
 
         <a href="/book/" class="active"><h1>Book A Session</h1></a>
 
@@ -35,8 +40,10 @@
 
         <div class = "left">
             <div class="fade-in">
+
                 <h3 style="margin-top: 5%; color:rgba(13, 80, 8, 0.372);;"  >New! Rates Starting at $20 / hour</h3>
-                <h2 ><b>Tutoring. Simplified.</b></h2>
+                <h2 ><b>Tutoring. Simplified</b></h2>
+
                 <h3>Offering tutoring in all subjects K-11 at cheap rates</h3>
     
                 <h3>Availble through in person or online tutoring</h3>
@@ -74,7 +81,7 @@
         <div class="footer">
             <!-- <i class="fa-brands fa-instagram fa-2x" style= "margin-right: 1%;"><a href="https://www.instagram.com/tutors_beat_tumors/"></a></i> -->
             
-            <h1 style="float: left; margin: .5%;"></h1>
+            <h1 style="float: left; margin: .5%;">Tutors Beat Tumors</h1>
             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-instagram fa-2x"></i></a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-facebook fa-2x"></i></a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-twitter fa-2x"></i></a>
