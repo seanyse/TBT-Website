@@ -16,41 +16,45 @@
      
 
     <div class="topnav" id="myTopnav">
-      <!-- <a href="/" style="display: inline-block"><img src="{{ url_for('static', filename='src/tbt_logo.jpg') }}" style=" float: left; width: 5%; display: block;"></a> -->
       <img src="{{ url_for('static', filename='src/logo.jpg') }}" style=" float: left; width: 4vw; min-width: 50px; display: block;">
 
                 
-        <a href="/"><h1>Tutors Beat Tumors</h1></a>
-        <a href="/mission/"><h1>Mission</h1></a>
-        <a href="/whyus/"><h1>Why Us?</h1></a>
-        <a href="/faq/"><h1>FAQ</h1></a>
-        <a href="/about/"><h1>About</h1></a>
+      <a href="/"><h1>Tutors Beat Tumors</h1></a>
+      <a href="/mission/"><h1>Mission</h1></a>
+      <a href="/whyus/"><h1>Why Us?</h1></a>
+      <a href="/faq/"><h1>FAQ</h1></a>
+      <a href="/about/"><h1>About</h1></a>
 
-        <a href="/book/" class="active"><h1>Book A Session</h1></a>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+      <a href="/book/" class="active"><h1>Book A Session</h1></a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
 
       </div>
 
     <div class = "wrapper" id="wrapper">
+      
 
         <div class = "left">
             <div class="fade-in">
 
-                <h3 style="margin-top: 5%; color:rgba(13, 80, 8, 0.372);;"  >New! Rates Starting at $20 / hour</h3>
+                <h3 style="margin-top: 5%; color:rgba(13, 80, 8, 0.372);">New! Rates Starting at $20 / hour</h3>
                 <h2 ><b>Tutoring. Simplified.</b></h2>
 
-                <h3>Offering tutoring in all subjects K-11 at cheap rates</h3>
+                <h3>Offering tutoring in all subjects K-11</h3>
     
                 <h3>Availble through in person or online tutoring</h3>
 
-                <h3>Hand-Picked Tutors with a 3.9 GPA requirement</h3>
+                <h3>Hand-Picked Tutors</h3>
 
                 <h3 style="margin-bottom: 10%;">100% of proceeds are donated</h3>
 
-                <a href="/book/" class="book">Book A Session → </a>
+                <a href="/book/" class="book"><h1>Book A Session <i class="fa-solid fa-arrow-right"></i></h1></a>
+
+
+                <!-- <h2>test</h2> -->
 
             </div>
            
@@ -62,32 +66,65 @@
 
             <div class="mySlides fade">
                 
-                <img src="{{ url_for('static', filename='src/tbt.jpg') }}" style="width: 100%; min-width: 350px; margin: auto;">
+                <img src="{{ url_for('static', filename='src/tbt.jpg') }}" style="width: 100%; min-width: 350px; margin-bottom: 5%;">
               </div>
             
-              <!-- <div class="mySlides fade">
-                
-                <img src="{{ url_for('static', filename='src/tutorimg.jpg') }}" style="width: 100%; max-height: 90%;">
-                
-                
-              </div> -->
-
-                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-                <!-- <a class="next" onclick="plusSlides(1)">Next &#10095;</a> -->
+              
 
 
 
         </div>
+
+
+        </div>
+
+        <div class="stats-container">
+          <div class="stats" style="float: left;">
+            <main>
+              <blockquote>
+                
+                <h1 style="font-size: 150%;"><i class="fa-regular fa-clock"></i> Hours Tutored: 50+</h1>
+  
+              </blockquote>
+            </main>
+
+          </div>
+
+          <div class="stats" style="float: left;">
+            <main>
+              <blockquote>
+                
+                <h1 style="font-size: 150%;"><i class="fa-solid fa-chalkboard-user"></i> Availble Tutors: 10+</h1>
+  
+              </blockquote>
+            </main>
+
+          </div>
+
+          <div class="stats" style="float: left;">
+            <main>
+              <blockquote>
+                
+                <h1 style="font-size: 150%;"><i class="fa-solid fa-money-bill"></i></i> Money Raised: $800+</h1>
+  
+              </blockquote>
+            </main>
+
+          </div>
+          
+          
+            
+        </div> 
 
         <div class="footer">
             <!-- <i class="fa-brands fa-instagram fa-2x" style= "margin-right: 1%;"><a href="https://www.instagram.com/tutors_beat_tumors/"></a></i> -->
             
             <h1 style="float: left; margin: .5%; margin-right: 3%;">Tutors Beat Tumors</h1>
             <!-- <h1 style="float: left; margin: .5%;">tutorbeattumor@gmail.com</h1> -->
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-facebook fa-2x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-twitter fa-2x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/tutors_beat_tumors/" style="margin-right: 1%; color: white;"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-linkedin fa-2x"></i></a>
 
             
         </div>

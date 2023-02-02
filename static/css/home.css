@@ -1,9 +1,13 @@
+
 body {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-
+  height: 100%;
+  background-color: rgb(255, 255, 255); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(197, 166, 229));
+  
  
 }
 
@@ -38,33 +42,34 @@ margin: 2%;
 
 .left {
 float: left;
-margin-bottom: 10%;
+margin-bottom: 5%;
+
 }
 
 .right {
-margin-top: 3%;
+margin-top: 0%;
 margin-left: 3%;
 float: left;
 width: 50%;
-margin-bottom: 10%;
+
 }
 
 .book {
 
-  font-family : inherit;
-
   color: rgb(255, 255, 255);
-  margin-left: 5%;
-  background-color: rgb(29, 116, 231);
+  
+  background-color: #0063c7d7;
   border-radius: 13px;
-  padding: 20px 50px;
+  padding: 8px 40px;
   text-decoration: none;
+  float: left;
+  margin-left: 5%;
 
 
 }
 
 .book:hover {
-  background-color: rgb(20, 82, 164);
+  background-color: #001ec7d7;
 
 }
 
@@ -76,6 +81,19 @@ height: auto;
 
 }
 
+.stats-container {
+  width: 95%;
+  margin: 2%;
+  margin-top: -2%;
+  /* margin-bottom: 10%; */
+  
+}
+.stats {
+  width: 31%;
+  margin-left: 2%;
+  min-width: 360px;
+  margin-bottom: 4%;
+}
 
 
 /* nav elements */
@@ -88,7 +106,6 @@ font-size: large;
 }
 .topnav {
 overflow: hidden;
-background-color: rgba(255, 255, 255, 0.372);
 margin: auto;
 width: 98%;
 padding: 7px;
@@ -115,7 +132,7 @@ color: rgb(16, 168, 224);
 
 color: rgb(255, 255, 255);
 float: right;
-background-color: rgb(29, 116, 231);
+background-color: #0063c7d7;
 border-radius: 13px;
 padding: 8px 40px;
 
@@ -123,7 +140,7 @@ padding: 8px 40px;
 }
 
 .topnav a.active:hover {
-background-color: rgb(20, 82, 164);
+  background-color: #001ec7d7;
 }
 
 
@@ -235,4 +252,37 @@ animation-duration: 2s;
   font-size: xx-large;
   
 
+}
+
+.icon {
+  margin-right: 1%; 
+  color: white;
+}
+
+/* frosted glass */
+
+
+main {
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  line-height: 3em;
+  text-align: center;
+}
+main::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  filter: blur(10px);
+  margin: -20px;
 }
