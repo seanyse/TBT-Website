@@ -7,31 +7,44 @@ function myFunction() {
   }
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+const counter = document.getElementById("counter-hours");
+let count = 0;
+const max = 50;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+const intervalId = setInterval(() => {
+  count++;
+  counter.innerHTML = '<i class="fa-regular fa-clock"></i> Hours Tutored: ' + count + "+";
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  if (count === max) {
+    clearInterval(intervalId);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+}, 20);
+
+
+const counter2 = document.getElementById("counter-tutors");
+let count2 = 0;
+const max2 = 10;
+
+const intervalId2 = setInterval(() => {
+  count2++;
+  counter2.innerHTML = '<i class="fa-solid fa-chalkboard-user"></i> Availble Tutors: ' + count2 + "+";
+
+  if (count2 === max2) {
+    clearInterval(intervalId2);
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+}, 100);
+
+
+const counter1 = document.getElementById("counter-money");
+let count1 = 500;
+const max1 = 800;
+
+const intervalId1 = setInterval(() => {
+  count1++;
+  counter1.innerHTML = '<i class="fa-solid fa-money-bill"></i></i> Money Raised: $' + count1 + "+";
+
+  if (count1 === max1) {
+    clearInterval(intervalId1);
+  }
+}, );
+
