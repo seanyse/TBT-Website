@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request, send_from_directory
 
 
 views = Blueprint(__name__, "views")
@@ -32,3 +32,9 @@ def about():
 @views.route("/book/")
 def book():
     return render_template("book.html")
+
+@views.route('/robots.txt')
+@views.route('/sitemap.xml')
+def static_from_root():
+    print("here")
+    return send_from_directory(views.static_folder, request.path[1:])
