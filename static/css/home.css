@@ -85,8 +85,6 @@ height: auto;
   width: 95%;
   margin: 2%;
   margin-top: -2%;
-  /* margin-bottom: 10%; */
-  
 }
 .stats {
   width: 31%;
@@ -259,3 +257,68 @@ main::before {
 }
 
 
+/* about  */
+
+.about-us-left {
+  margin-top: 15%;
+
+  float: left;
+  
+  margin-right: 13%;
+  overflow: hidden;
+  
+
+}
+.about-us-right {
+  
+  margin-top: 10%;
+  width: 50%;
+  min-width: 350px;
+  float: left;
+  margin-right: 0%;
+  
+}
+
+
+.about-us-wrapper {
+  
+  width: 96%;
+  margin: 2%;
+  margin-bottom: 10%;
+  
+}
+
+.about-us-text {
+  margin-right: 2%;
+  float: right;
+  text-align: right;
+}
+
+
+
+/* collapsible */
+
+.collapsible {
+  background-color: rgb(189, 163, 215);
+  color: rgb(232, 232, 232);
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 120%;
+  margin-top: 2%;
+  font-family: inherit;
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(170, 128, 212, 0.655)
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgb(218, 194, 242);
+}
