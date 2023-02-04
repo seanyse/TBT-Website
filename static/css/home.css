@@ -85,6 +85,7 @@ height: auto;
   width: 95%;
   margin: 2%;
   margin-top: -2%;
+  margin-bottom: 0%;
 }
 .stats {
   width: 31%;
@@ -322,3 +323,18 @@ main::before {
   overflow: hidden;
   background-color: rgb(218, 194, 242);
 }
+
+/* scroll animation */
+.reveal{
+  background-color: inherit;
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* scroll down button animation */

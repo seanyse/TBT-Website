@@ -5,6 +5,8 @@ views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home():
+    print("herehome")
+
     return render_template("home.html")
 
 
@@ -36,5 +38,5 @@ def book():
 @views.route('/robots.txt')
 @views.route('/sitemap.xml')
 def static_from_root():
-    print("here")
+    print("hererobots")
     return send_from_directory(views.static_folder, request.path[1:])
