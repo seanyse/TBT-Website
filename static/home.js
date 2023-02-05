@@ -37,7 +37,7 @@ const intervalId2 = setInterval(() => {
 
 const counter1 = document.getElementById("counter-money");
 let count1 = 500;
-const max1 = 800;
+const max1 = 900;
 
 const intervalId1 = setInterval(() => {
   count1++;
@@ -73,7 +73,7 @@ function reveal() {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
     var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible + 250) {
+    if (elementTop < windowHeight - elementVisible + 225) {
       reveals[i].classList.add("active");
     } else {
       reveals[i].classList.remove("active");

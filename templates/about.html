@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="icon" href="{{ url_for('static', filename='src/logo.jpg') }}" type="image/icon type">
+    <link rel="icon" href="{{ url_for('static', filename='src/logo.png') }}" type="image/icon type">
 
     
 </head>
@@ -15,13 +15,12 @@
     <title>About</title>
 
         <div class="topnav" id="myTopnav">
-      <!-- <a href="/" style="display: inline-block"><img src="{{ url_for('static', filename='src/tbt_logo.jpg') }}" style=" float: left; width: 5%; display: block;"></a> -->
-      <img src="{{ url_for('static', filename='src/logo.jpg') }}" style=" float: left; width: 4vw; min-width: 50px; display: block;">
+      <!-- <a href="/" style="display: inline-block"><img src="{{ url_for('static', filename='src/tbt_logo.png') }}" style=" float: left; width: 5%; display: block;"></a> -->
+      <a href="/"><img src="{{ url_for('static', filename='src/logo.png') }}" style=" width:2.5em; min-width: 30px;"></a>
 
                 
-        <a href="/"><h1>Tutors Beat Tumors</h1></a>
-        <a href="/mission/"><h1>Mission</h1></a>
-        <a href="/whyus/"><h1>Why Us?</h1></a>
+      <a href="/"><h1>Home</h1></a>
+      <a href="/mission/"><h1>Mission</h1></a>
         <a href="/faq/"><h1>FAQ</h1></a>
         <a href="/about/"><h1>About</h1></a>
 

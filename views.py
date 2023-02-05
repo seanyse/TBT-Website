@@ -40,3 +40,7 @@ def book():
 def static_from_root():
     print("hererobots")
     return send_from_directory(views.static_folder, request.path[1:])
+
+@views.route('/courses/')
+def courses():
+    return render_template("courses.html")
