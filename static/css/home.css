@@ -7,7 +7,7 @@ body {
   height: 100%;
   background-color: rgb(255, 255, 255); /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(197, 166, 229));
-  
+  margin-bottom: 15%;
  
 }
 
@@ -295,7 +295,77 @@ main::before {
   text-align: right;
 }
 
+/* classes offered */
+.classes-offered-wrapper {
+  margin-top: 2%;
+  width: 100%;
+  
+  
+}
+.classes-offered-text {
+  margin-bottom: 3%;
+  
+}
+.classes-offered-info {
+  margin-left: 5%;
+  width: 40%;
+  border-radius: 15px;
+  padding: 30px 10px;
+  backdrop-filter: blur(10px);
+  background-color: #edceed;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  float: left;
+  margin-bottom: 5%;
+  min-width: 310px;
+}
+.classes-offered-graphics {
+  /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+  margin-left: 5%;
+  float:left;
+  width: 48%;
+  min-width: 310px;
 
+
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+
+}
+
+.classes-offered-graphics-individual {
+  border-radius: 10px;
+  padding: 1% 1%;
+  /* backdrop-filter: blur(10px); */
+  background-color: #edceed;
+  width: 15%;
+  min-width: 62px;
+  float: left;
+  display: inline;
+  margin-left: 3%;
+  margin-bottom: 1.2%;
+
+}
+.classes-offered-graphics-individual:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.btn-see-all-courses {
+  color: rgb(25, 25, 25);
+  
+  background-color: #eeb5ee;
+  border-radius: 13px;
+  padding: 8px 40px;
+  min-width: 220px;
+  text-decoration: none;
+  float: left;
+  margin-left: 5%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.btn-see-all-courses:hover {
+  background-color: #ef9def;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* word by word */
 
 /* collapsible */
 
@@ -304,6 +374,7 @@ main::before {
   color: rgb(232, 232, 232);
   cursor: pointer;
   padding: 20px;
+  border-radius: 15px;
   width: 100%;
   border: none;
   text-align: left;
@@ -321,6 +392,7 @@ main::before {
   padding: 0 18px;
   display: none;
   overflow: hidden;
+  border-radius: 10px;
   background-color: rgb(218, 194, 242);
 }
 
@@ -337,4 +409,5 @@ main::before {
   opacity: 1;
 }
 
-/* scroll down button animation */
+
+/* blurred box */
