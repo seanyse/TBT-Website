@@ -5,8 +5,6 @@ views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home():
-    print("herehome")
-
     return render_template("home.html")
 
 

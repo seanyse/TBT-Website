@@ -6,7 +6,7 @@ body {
   /* align-items: center; */
   height: 100%;
   background-color: rgb(255, 255, 255); /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(197, 166, 229));
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(166, 175, 229));
   margin-bottom: 15%;
  
 }
@@ -334,7 +334,7 @@ main::before {
   border-radius: 10px;
   padding: 1% 1%;
   /* backdrop-filter: blur(10px); */
-  background-color: #edceed;
+  background-color: #dadfeb;
   width: 15%;
   min-width: 62px;
   float: left;
@@ -350,7 +350,7 @@ main::before {
 .btn-see-all-courses {
   color: rgb(25, 25, 25);
   
-  background-color: #eeb5ee;
+  background-color: #dadfeb;
   border-radius: 13px;
   padding: 8px 40px;
   min-width: 220px;
@@ -361,7 +361,7 @@ main::before {
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .btn-see-all-courses:hover {
-  background-color: #e7ace7;
+  background-color: #a8b9e0;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px #00000038;
 }
 
@@ -370,7 +370,7 @@ main::before {
 /* collapsible */
 
 .collapsible {
-  background-color:#c15bc631;;
+  background-color:#d8ddead0;;
   color: rgb(45, 45, 45);
   cursor: pointer;
   padding: 20px;
@@ -382,10 +382,14 @@ main::before {
   font-size: 120%;
   margin-top: 2%;
   font-family: inherit;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
+
+
+
 }
 
 .active, .collapsible:hover {
-  background-color: rgba(170, 128, 212, 0.655)
+  background-color:#b9c6e9d0;;
 }
 
 .content {
@@ -393,7 +397,7 @@ main::before {
   display: none;
   overflow: hidden;
   border-radius: 10px;
-  background-color: rgb(218, 194, 242);
+  background-color:#cfd8ea;;
 }
 
 /* scroll animation */
