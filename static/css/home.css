@@ -21,12 +21,14 @@ h1 {
 h2 {
   margin-top: 0%;
   font-size: 350%;
+  /* font-size: 5vw; */
   margin-left: 5%;
 }
 
 h3  {
 
 font-size: 150%;
+/* font-size: 2vw; */
 margin-left: 5%;
 color: #818181;
 margin-top:0% ;
@@ -43,6 +45,8 @@ margin: 2%;
 .left {
 float: left;
 margin-bottom: 5%;
+width: 40%;
+min-width: 380px;
 
 }
 
@@ -265,8 +269,9 @@ main::before {
 
   float: left;
   
-  margin-right: 13%;
   overflow: hidden;
+  width: 40%;
+  min-width: 380px
   
 
 }
@@ -275,7 +280,7 @@ main::before {
   margin-top: 10%;
   width: 50%;
   min-width: 350px;
-  float: left;
+  float: right;
   margin-right: 0%;
   
 }
@@ -334,7 +339,7 @@ main::before {
   border-radius: 10px;
   padding: 1% 1%;
   /* backdrop-filter: blur(10px); */
-  background-color: #dadfeb;
+  background-color: rgb(214, 221, 239);
   width: 15%;
   min-width: 62px;
   float: left;
@@ -348,9 +353,9 @@ main::before {
 }
 
 .btn-see-all-courses {
-  color: rgb(25, 25, 25);
+  color: rgb(255, 255, 255);
   
-  background-color: #dadfeb;
+  background-color: rgb(46, 105, 242);
   border-radius: 13px;
   padding: 8px 40px;
   min-width: 220px;
@@ -361,7 +366,7 @@ main::before {
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 .btn-see-all-courses:hover {
-  background-color: #a8b9e0;
+  background-color: #4461a6;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px #00000038;
 }
 
@@ -370,7 +375,7 @@ main::before {
 /* collapsible */
 
 .collapsible {
-  background-color:#d8ddead0;;
+  background-color:#E6E8F7;;
   color: rgb(45, 45, 45);
   cursor: pointer;
   padding: 20px;
@@ -381,7 +386,7 @@ main::before {
   outline: none;
   font-size: 120%;
   margin-top: 2%;
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   box-shadow: 0 2px 5px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
 
 
@@ -397,7 +402,7 @@ main::before {
   display: none;
   overflow: hidden;
   border-radius: 10px;
-  background-color:#cfd8ea;;
+  background-color:#dadefb;;
 }
 
 /* scroll animation */
