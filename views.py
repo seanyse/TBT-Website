@@ -7,12 +7,17 @@ views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home():
-    webhook = os.environ["webhook"] 
-    current_time = time.time()
-    data = {
-    "content": f"TBT New Website Vistor at {time.ctime(current_time)}"
-    }
-    response = requests.post(webhook, json=data)
+    try:
+        webhook = os.environ["webhook"] 
+        current_time = time.time()
+        data = {
+        "content": f"TBT New Website Vistor at {time.ctime(current_time)}"
+        }
+        response = requests.post(webhook, json=data)
+        print(data)
+
+    except Exception as e:
+        print(e)
 
 
     return render_template("home.html")
