@@ -1,7 +1,9 @@
 from flask import Blueprint, render_template, request, send_from_directory
 import os
 import requests
-import time
+import datetime
+import pytz
+
 
 views = Blueprint(__name__, "views")
 
@@ -9,9 +11,11 @@ views = Blueprint(__name__, "views")
 def home():
     try:
         webhook = os.environ["webhook"] 
-        current_time = time.time()
+        est = pytz.timezone('America/New_York')
+        now = datetime.datetime.now(est)
+
         data = {
-        "content": f"TBT New Website Vistor at {time.ctime(current_time)}"
+        "content": f"TBT New Website Vistor at {now.strftime('%Y-%m-%d %H:%M:%S')}"
         }
         response = requests.post(webhook, json=data)
         print(data)
