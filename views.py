@@ -1,10 +1,18 @@
 from flask import Blueprint, render_template, request, send_from_directory
-
+import os
+import requests
 
 views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home():
+    webhook = os.environ["webhook"] 
+    data = {
+    "content": "New Visitor"
+    }
+    response = requests.post(webhook, json=data)
+
+
     return render_template("home.html")
 
 
