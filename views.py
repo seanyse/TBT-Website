@@ -1,14 +1,16 @@
 from flask import Blueprint, render_template, request, send_from_directory
 import os
 import requests
+import time
 
 views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home():
     webhook = os.environ["webhook"] 
+    current_time = time.time()
     data = {
-    "content": "New Visitor"
+    "content": f"TBT New Website Vistor at {time.ctime(current_time)}"
     }
     response = requests.post(webhook, json=data)
 
