@@ -9,20 +9,19 @@ views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home():
-    try:
-        webhook = os.environ["webhook"] 
-        est = pytz.timezone('America/New_York')
-        now = datetime.datetime.now(est)
+    # try:
+    #     webhook = os.environ["webhook"] 
+    #     est = pytz.timezone('America/New_York')
+    #     now = datetime.datetime.now(est)
 
-        data = {
-        "content": f"TBT New Website Vistor at {now.strftime('%Y-%m-%d %H:%M:%S')}"
-        }
-        response = requests.post(webhook, json=data)
-        print(data)
+    #     data = {
+    #     "content": f"TBT New Website Vistor at {now.strftime('%Y-%m-%d %H:%M:%S')}"
+    #     }
+    #     response = requests.post(webhook, json=data)
+    #     print(data)
 
-    except Exception as e:
-        print(e)
-
+    # except Exception as e:
+    #     print(e)
 
     return render_template("home.html")
 
