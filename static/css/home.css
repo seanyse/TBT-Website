@@ -390,30 +390,53 @@ main::before {
 
 .closing {
   margin-top: 3%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.closing-img {
+  width: 100%;
+  min-width: 900px
+}
+.closing-book-btn {
+  width:100%;
+  display: flex;
+  justify-content: center;
 }
 
-.closing-book-btn {
-  margin: auto;
+.redirect-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.redirect {
+  margin-top: 1%;
   text-align: center;
 }
 
-.redirect-wrapper {
-  width: 100%; 
-  margin-left: 22%;
-  
-} 
-.redirect {
-  margin-top: 1%;
+.redirect-btn {
+  color: rgb(255, 255, 255);
+  border-radius: 13px;
+  padding: 8px 40px;
+  min-width: 220px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  float: right;
+  margin-left: 10px;
 }
+
+.redirect-btn:hover {
+  box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.862);
+}
+
 .instagram-gradiant {
   background-image: linear-gradient(45deg, #f09533d0, #e6683c, #dc2743, #cc2366, #bc1888, #9d1a7b, #782f80, #4d5061);
-
-
 }
+
 .mail-gradiant {
   background-image: linear-gradient(45deg, #001f66, #002b99, #0038cc, #0046ff, #0066ff, #3385ff, #66a5ff);
-
 }
+
 
 /* collapsible */
 
