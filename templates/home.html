@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" href="{{ url_for('static', filename='src/logo.png') }}" type="image/icon type">
     <meta name="google-site-verification" content="Irz_KliQg2rXRbzecKh2E7j4vicdrRiNhs0uL75DFlw" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     
 </head>
 <body>
@@ -72,7 +74,7 @@
         <!-- stats -->
 
         <div class="stats-container">
-          <div class="stats" style="float: left;">
+          <div class="stats">
             <main>
               <blockquote>
                 
@@ -83,7 +85,7 @@
 
           </div>
 
-          <div class="stats" style="float: left;">
+          <div class="stats">
             <main>
               <blockquote>
                 
@@ -94,7 +96,7 @@
 
           </div>
 
-          <div class="stats" style="float: left; ">
+          <div class="stats">
             <main>
               <blockquote>
                 
@@ -252,27 +254,34 @@
             <img src="{{ url_for('static', filename='src/logo.png') }}" style="margin-left: 45%; width: 10%; margin-bottom: 5%;">
           </div>
 
+
+          
+
         </div>
 
         <h2 style="font-size: 230%; text-align: center;">Ready to Elevate your Education?</h2>
     
         <div class="closing-book-btn-wrapper">
           <div class="closing-book-btn">
-            <a href="/book/" class="book" style="width: 45%;"><h1>Book A Session</h1></a>
+            <a href="/book/" class="book" style="width: 45%; min-width: 250px; margin-left: 0;"><h1>Book A Session</h1></a>
           </div>
-          
+
         </div>
-        
-        
+
         <div class="redirect-parent">
-          <div class="redirect">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" class="redirect-btn instagram-gradiant"><h1><i class="fa-brands fa-instagram"></i> Follow us</h1></a>
-          </div>
-        
-          <div class="redirect">
-            <a target="_blank" rel="noopener noreferrer" href="mailto:tutorbeattumor@gmail.com" class="redirect-btn mail-gradiant"><h1><i class="fa-regular fa-envelope"></i> Contact us</h1></a>
-          </div>
+
+            <div> 
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" class="redirect-btn instagram-gradiant" style="float: left;"><h1><i class="fa-brands fa-instagram"></i> Follow us</h1></a>
+              <a target="_blank" rel="noopener noreferrer" href="mailto:tutorbeattumor@gmail.com" class="redirect-btn mail-gradiant" style="float: left;"><h1><i class="fa-regular fa-envelope"></i> Contact us</h1></a>
+              
+            </div>
+          
+            
         </div>
+        
+        
+        
+        
         
           
 

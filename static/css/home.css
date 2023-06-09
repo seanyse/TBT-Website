@@ -15,7 +15,7 @@ body {
   background-color: rgb(255, 255, 255); /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(166, 175, 229));
   margin-bottom: 15%;
- 
+  overflow-x: hidden;
 }
 
 h1 {
@@ -106,6 +106,7 @@ height: auto;
   margin-left: 2%;
   min-width: 358px;
   margin-bottom: 4%;
+  float: left;
 }
 
 
@@ -393,36 +394,54 @@ main::before {
   width:100%;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 .closing-img {
   width: 100%;
   min-width: 900px
 }
+
+
 .closing-book-btn {
   width:100%;
   display: flex;
   justify-content: center;
+  margin-left: 0;
 }
+
 
 .redirect-parent {
+  
+  width:100%;
   display: flex;
   justify-content: center;
+
 }
 
-.redirect {
-  margin-top: 1%;
-  text-align: center;
-}
+  
+
+
 
 .redirect-btn {
+  
   color: rgb(255, 255, 255);
   border-radius: 13px;
   padding: 8px 40px;
-  min-width: 220px;
+  min-width: 250px;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  float: right;
-  margin-left: 10px;
+  width: 36.7%;
+  text-align: center;
+  margin: 5px;
+  margin-top: 2%;
+  
+
+  
+}
+@media only screen and (max-width: 600px) {
+  .redirect-btn {
+    margin-left: 8%;
+  }
 }
 
 .redirect-btn:hover {
