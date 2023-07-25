@@ -46,6 +46,7 @@ margin-bottom:.5%;
 
 .wrapper {
 margin: 2%;
+margin-bottom: 1%;
 
 }
 
@@ -63,6 +64,10 @@ margin-left: 3%;
 float: left;
 width: 50%;
 
+}
+
+.img-wrapper {
+  padding: 2%;
 }
 
 .book {
@@ -333,7 +338,7 @@ main::before {
   border-radius: 15px;
   padding: 30px 10px;
   backdrop-filter: blur(10px);
-  background-color: #edceed;
+  background-color: #e6e9f0;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   float: left;
   margin-bottom: 5%;
@@ -420,8 +425,6 @@ main::before {
 
   
 
-
-
 .redirect-btn {
   
   color: rgb(255, 255, 255);
@@ -439,8 +442,8 @@ main::before {
   
 }
 @media only screen and (max-width: 600px) {
-  .redirect-btn {
-    margin-left: 8%;
+  .redirect-parent {
+    margin-left: 5%;
   }
 }
 
