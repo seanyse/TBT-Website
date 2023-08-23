@@ -9,7 +9,7 @@ function myFunction() {
 
 const counter = document.getElementById("counter-hours");
 let count = 0;
-const max = 75;
+const max = 125;
 
 const intervalId = setInterval(() => {
   count++;
@@ -36,8 +36,8 @@ const intervalId2 = setInterval(() => {
 
 
 const counter1 = document.getElementById("counter-money");
-let count1 = 1500;
-const max1 = 2500;
+let count1 = 2000;
+const max1 = 2800;
 
 const intervalId1 = setInterval(() => {
   count1++;
