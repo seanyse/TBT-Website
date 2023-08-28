@@ -54,3 +54,7 @@ def book():
 @views.route('/courses/')
 def courses():
     return render_template("courses.html")
+
+@views.route('/tutor/')
+def beatutor():
+    return render_template("tutor.html")
