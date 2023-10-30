@@ -1,4 +1,4 @@
-Flask==2.2.2
+Flask==3.0.0
 pytz==2021.3
 requests==2.27.1
 Gunicorn
