@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, send_from_directory
+from flask import Blueprint, render_template, request, send_from_directory, redirect
 import os
 import requests
 import datetime
@@ -58,3 +58,7 @@ def courses():
 @views.route('/tutor/')
 def beatutor():
     return render_template("tutor.html")
+
+@views.route('/board/')
+def beBoard():
+    return redirect("https://docs.google.com/forms/d/e/1FAIpQLSdsE_9r5CxcJwsfwZ39UzKz11YhqOC-v72KYm5H6_1lcHxwdw/viewform?vc=0&c=0&w=1&flr=0", code=302)
