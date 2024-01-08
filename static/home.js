@@ -36,8 +36,8 @@ const intervalId2 = setInterval(() => {
 
 
 const counter1 = document.getElementById("counter-money");
-let count1 = 5500;
-const max1 = 6500;
+let count1 = 6000;
+const max1 = 7000;
 
 const intervalId1 = setInterval(() => {
   count1++;
