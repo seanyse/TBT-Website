@@ -6,8 +6,9 @@ import pytz
 
 
 views = Blueprint(__name__, "views")
-
+# delete after research
 formA = True
+
 @views.route("/")
 def home():
     # try:
@@ -64,8 +65,9 @@ def beatutor():
 def beBoard():
     return redirect("https://docs.google.com/forms/d/e/1FAIpQLSdsE_9r5CxcJwsfwZ39UzKz11YhqOC-v72KYm5H6_1lcHxwdw/viewform?vc=0&c=0&w=1&flr=0", code=302)
 
-@views.route('/survey')
+@views.route('/survey/')
 def survey():
+    global formA
     if formA:
         formA = False
         return redirect("https://forms.gle/YCH17TF2MxVizYne8")
