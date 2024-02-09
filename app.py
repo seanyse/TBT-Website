@@ -3,8 +3,12 @@ from views import views
 
 app = Flask(__name__, static_folder="static")
 
-app.register_blueprint(views, url_prefix = "/")
+# delete after research
+app = Flask(__name__)
+app.secret_key = 'apresearch'
+app.register_blueprint(views)
 
+app.register_blueprint(views, url_prefix = "/")
 
 if __name__ == "__main__":
     app.run()

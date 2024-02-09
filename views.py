@@ -1,13 +1,12 @@
-from flask import Blueprint, render_template, request, send_from_directory, redirect
+from flask import Blueprint, render_template, request, send_from_directory, redirect, Flask, session
 import os
 import requests
 import datetime
 import pytz
 
 
-views = Blueprint(__name__, "views")
-# delete after research
-formA = True
+views = Blueprint("views", __name__)
+
 
 @views.route("/")
 def home():
@@ -67,11 +66,14 @@ def beBoard():
 
 @views.route('/survey/')
 def survey():
-    global formA
-    if formA:
-        formA = False
+    if 'formA' not in session:
+        session['formA'] = True
+
+    if session['formA']:
+        session['formA'] = False
         return redirect("https://forms.gle/YCH17TF2MxVizYne8")
     else:
-        formA = True
+        session['formA'] = True
         return redirect("https://forms.gle/gT9ZdjBjJKV35VtJ8")
-    
+
+
