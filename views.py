@@ -3,6 +3,7 @@ import os
 import requests
 import datetime
 import pytz
+import random
 
 
 views = Blueprint("views", __name__)
@@ -66,14 +67,12 @@ def beBoard():
 
 @views.route('/survey/')
 def survey():
-    if 'formA' not in session:
-        session['formA'] = True
-
-    if session['formA']:
-        session['formA'] = False
+    num = random.randint(0,100)
+    if (num < 50):
+        print("1")
         return redirect("https://forms.gle/YCH17TF2MxVizYne8")
     else:
-        session['formA'] = True
+        print("2")
         return redirect("https://forms.gle/gT9ZdjBjJKV35VtJ8")
 
 
