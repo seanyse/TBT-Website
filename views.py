@@ -67,6 +67,7 @@ def beBoard():
 
 @views.route('/survey/')
 def survey():
+    return render_template("survey.html")
     num = random.randint(0,100)
     if (num < 50):
         print("1")
