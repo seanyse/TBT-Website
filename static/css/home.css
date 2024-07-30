@@ -513,5 +513,49 @@ main::before {
   opacity: 1;
 }
 
+/* Main wrapper for the About Us section */
+/* .wrapper {
+  margin: 2%;
+  margin-bottom: 1%;
+  padding: 20px;
+  text-align: center;
+  background: inherit;
+} */
 
-/* blurred box */
+/* Flexbox container for founders */
+.founders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background: inherit;
+}
+
+/* Individual founder style */
+.founder {
+  flex: 1 1 calc(33% - 40px);
+  margin: 10px;
+  text-align: center;
+  background: inherit;
+}
+
+/* Image style for founders */
+.founder img {
+  width: 20vw;
+  min-width: 75px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Media queries for responsiveness
+@media screen and (max-width: 768px) {
+  .founders {
+      flex-direction: column;
+  }
+
+  .founder {
+      flex: 1 1 100%;
+  }
+} */
+
+

@@ -5,136 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
-    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" href="{{ url_for('static', filename='src/logo.png') }}" type="image/icon type">
-
-    
+    <title>About Our Founders - Tutors Beat Tumors</title>
 </head>
 <body>
-    <title>About Our Founders - Tutors Beat Tumors</title>
 
-        <div class="topnav" id="myTopnav">
-      <!-- <a href="/" style="display: inline-block"><img src="{{ url_for('static', filename='src/tbt_logo.png') }}" style=" float: left; width: 5%; display: block;"></a> -->
-      <a href="/"><img src="{{ url_for('static', filename='src/logo.png') }}" style=" width:2.5em; min-width: 30px;"></a>
+<div class="topnav" id="myTopnav">
+    <a href="/"><img src="{{ url_for('static', filename='src/logo.png') }}" class="logo" style=" width:2.5em; min-width: 30px;" alt="Tutors Beat Tumors Logo"></a>
+    <a href="/mission/"><h1>Mission</h1></a>
+    <a href="/faq/"><h1>FAQ</h1></a>
+    <a href="/about/"><h1>About</h1></a>
+    <a href="/courses/"><h1>Courses</h1></a>
+    <a href="/tutor/"><h1>Be a Tutor</h1></a>
+    <a href="/book/" class="active"><h1>Book A Session</h1></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</div>
 
-                
-      <!-- <a href="/"><h1>Home</h1></a> -->
-      <a href="/mission/"><h1>Mission</h1></a>
-      <a href="/faq/"><h1>FAQ</h1></a>
-      <a href="/about/"><h1>About</h1></a>
-      <a href="/courses/"><h1>Courses</h1></a>
-      <a href="/tutor/"><h1>Be a Tutor</h1></a>
+<div class="wrapper" id="wrapper">
+    <h2>About Us</h2>
 
-      <a href="/book/" class="active"><h1>Book A Session</h1></a>
-    
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-
-      </div>
-
-    <div class = "wrapper" id="wrapper">
-
-        <h2>
-            About Us
-        </h2>
-
-        <div style="width: 100%; margin-left: 0%; text-align: center; overflow-wrap: break-word;">
-            <div style="float: left; width: 33%;">
-
-                <h3 style="color: black;">
-                    Prakash Mitra
-
-                </h3>
-                
-                <h3 style="margin-bottom: 5%; font-size: medium;"> 
-                    
-
-                    Founder </br>
-
-                    prakashjmitra@gmail.com
-
-
-
-                </h3>
-
-                <img src="{{ url_for('static', filename='src/prakash.jpg') }}" style="margin: auto; display: block; width: 20vw; min-width: 100px; display: block;" alt="Prakash Mitra, founder of Tutors Beat Tumors">
-
-            
-            </div>
-            <div style="width: 100%; margin-left: 0%; text-align: center;">
-                <div style="float: left; width: 33%;">
-    
-                    <h3 style="color: black;">
-                        Sean W Yan
-    
-                    </h3>
-                    
-                    <h3 style="margin-bottom: 5%; font-size: medium;"> 
-                        
-    
-                        Founder </br>
-
-                        seanyan0915@gmail.com
-    
-    
-                    </h3>
-    
-                    <img src="{{ url_for('static', filename='src/sean.jpg') }}" style="margin: auto; display: block; width: 20vw; min-width: 100px; display: block;" alt="Sean Yan, founder of Tutors Beat Tumors">
-    
-                
-                </div>
-
-                <div style="width: 100%; margin-left: 0%; text-align: center;">
-                    <div style="float: left; width: 33%;">
-        
-                        <h3 style="color: black;">
-                            Mateo Weeks
-        
-                        </h3>
-                        
-                        <h3 style="margin-bottom: 5%; font-size: medium;"> 
-                            
-        
-                            Founder </br>
-
-                            mateoweeks@icloud.com
-        
-        
-                        </h3>
-        
-                        <img src="{{ url_for('static', filename='src/mateo.jpg') }}" style="margin: auto; display: block; width: 20vw; min-width: 100px; display: block;" alt="Mateo Weeks, founder of Tutors Beat Tumors">
-        
-                    
-                    </div>
-                
-                <br style="clear: left;" />
-           </div>
-        
-
-
+    <div class="founders">
+        <div class="founder">
+            <h3>Emory Williams</h3>
+            <h4>President</h4>
+            <img src="{{ url_for('static', filename='src/EmoryWilliams.jpg') }}" alt="Emory Williams">
         </div>
-
-        <div class="footer">
-            <!-- <i class="fa-brands fa-instagram fa-2x" style= "margin-right: 1%;"><a href="https://www.instagram.com/tutors_beat_tumors/"></a></i> -->
-            
-            <h1 style="float: left; margin: .5%; margin-right: 3%;">TBT@2023</h1>
-            <!-- <h1 style="float: left; margin: .5%;">tutorbeattumor@gmail.com</h1> -->
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="mailto:tutorbeattumor@gmail.com" class="icon"><i class="fa-regular fa-envelope fa-2x"></i></a>
-            <!-- <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-twitter fa-2x"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-linkedin fa-2x"></i></a> -->
-
-            
+        <div class="founder">
+            <h3>Bruce Ren</h3>
+            <h4>Vice President</h4>
+            <img src="{{ url_for('static', filename='src/BruceRen.jpg') }}" alt="Bruce Ren">
         </div>
-    
-
+        <div class="founder">
+            <h3>Yuri Sung</h3>
+            <h4>Head of Marketing</h4>
+            <img src="{{ url_for('static', filename='src/YuriSung.jpg') }}" alt="Yuri Sung">
+        </div>
+        <div class="founder">
+            <h3>Tatyana Solntseva</h3>
+            <h4>Head of Marketing</h4>
+            <img src="{{ url_for('static', filename='src/TatyanaSolntseva.jpg') }}" alt="Tatyana Solntseva">
+        </div>
+        <div class="founder">
+            <h3>Grayson Allen</h3>
+            <h4>Head Tutor</h4>
+            <img src="{{ url_for('static', filename='src/noprofile.png') }}" alt="Grayson Allen">
+        </div>
+        <div class="founder">
+            <h3>Wyatt Zellers</h3>
+            <h4>Treasurer</h4>
+            <img src="{{ url_for('static', filename='src/noprofile.png') }}" alt="Wyatt Zellers">
+        </div>
     </div>
-    
+</div>
 
-    
+<div class="footer">
+    <h1 style="float: left; margin: .5%; margin-right: 3%;">TBT@2023</h1>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tutors_beat_tumors/" class="icon"><i class="fa-brands fa-instagram fa-2x"></i></a>
+    <a target="_blank" rel="noopener noreferrer" href="mailto:tutorbeattumor@gmail.com" class="icon"><i class="fa-regular fa-envelope fa-2x"></i></a>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='home.js') }}"></script>
+
 </body>
 </html>
-
-<script type="text/javascript" src= {{ url_for('static', filename='home.js')}}></script>
